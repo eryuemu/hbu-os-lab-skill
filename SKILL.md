@@ -10,7 +10,7 @@ description: >-
 
 ---
 
-## 🎯 核心定位与写作口吻
+## 核心定位与写作口吻
 
 1. **课程性质**：大二上学期计算机/工科选修课（如 25 自动化专业）。
 2. **语言风格**：
@@ -20,7 +20,7 @@ description: >-
 
 ---
 
-## 🚫 五大核心排版铁律（避坑必读）
+## 五大核心排版铁律（避坑必读）
 
 | 规则 | 具体要求 | 严重后果与原因 |
 | :--- | :--- | :--- |
@@ -32,7 +32,7 @@ description: >-
 
 ---
 
-## 📋 标准执行流程 (SOP)
+## 标准执行流程 (SOP)
 
 ```mermaid
 flowchart TD
@@ -95,7 +95,7 @@ python3 ~/.gemini/config/skills/hebei-university-os-lab-skill/scripts/build_repo
 
 ---
 
-## 📚 知识库与参考手册
+## 知识库与参考手册
 
 - [排版规范与样式细节](./references/report_standard.md)：字体字号、段落间距、嵌套表格样式。
 - [封皮字段与 XML 映射指南](./references/cover_fields.md)：封皮下划线保持、居中对齐处理。

@@ -1,30 +1,33 @@
-# 河北大学选修课《操作系统实验》Antigravity 专属 Skill
+# 河北大学选修课《操作系统实验》AI Agent Skill
 # HBU OS Elective Lab Skill
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Platform: Antigravity](https://img.shields.io/badge/Antigravity-Skill-blue.svg)](https://antigravity.google)
-[![Compatible: WPS & Word](https://img.shields.io/badge/Office-WPS%20%7C%20Word-green.svg)](https://www.wps.cn)
+[![Built with: AGY](https://img.shields.io/badge/Built%20with-Antigravity%20(AGY)-blue.svg)](https://antigravity.google)
+[![Compatible: All AI Agents](https://img.shields.io/badge/Compatible-All%20AI%20Agents-brightgreen.svg)](#)
+[![Office: WPS & Word](https://img.shields.io/badge/Office-WPS%20%7C%20Word-green.svg)](https://www.wps.cn)
 
-> 适用于河北大学（HBU）电子信息工程学院等本科《操作系统实验》（选修课）报告自动编写、格式排版、照片去水印与避坑的全套经验与自动化工具库。
+适用于河北大学（HBU）电子信息工程学院等本科《操作系统实验》（选修课）报告自动编写、格式排版、照片去水印与避坑的全套经验与自动化工具库。
 
----
-
-## ✨ 核心特性
-
-- 🎯 **符合大二选修课真实水平**：文风严谨踏实，拒绝过度晦涩学术化，真实呈现普通偏优秀（良好偏上）的工科作业口吻。
-- 🚫 **彻底根除彩色字**：严格遵循 Word/WPS 默认纯黑文字规范，文档内部 0 `<w:color>` 标签，杜绝 AI 痕迹。
-- 📑 **原模板 6 行大表格 100% 保全**：完全基于河大官方报告模板的大框架填充，保持学院教师批改视觉习惯。
-- 📄 **多余空白页（第 2 页空白）自动消灭**：分析并解决了封面分页符与空行溢出导致第 2 页出现空白页的问题。
-- 🖼️ **翻拍照片去水印与尺寸控制**：自带图片预处理工具，自动裁切手机相机水印（realme/iPhone 等）与非屏幕边框，自动自适应排版。
-- 📚 **全课程实验大纲覆盖**：沉淀了实验一至实验七（进程控制、同步互斥、调度、银行家算法、内存管理、页面置换、磁盘调度）的核心题库与要点。
+本项目基于 Google Antigravity (AGY) 实战沉淀构建，架构遵循通用标准，完全适用于所有主流 AI Agent（包括 Antigravity、Claude Code、Cursor、Windsurf、GitHub Copilot 等），亦可脱离 AI 独立在终端执行。
 
 ---
 
-## 📁 目录结构
+## 核心特性
+
+- **符合大二选修课真实水平**：文风严谨踏实，拒绝过度晦涩学术化，真实呈现普通偏优秀（良好偏上）的工科作业口吻。
+- **彻底根除彩色字**：严格遵循 Word/WPS 默认纯黑文字规范，文档内部 0 `<w:color>` 标签，杜绝机器生成的蓝褐色痕迹。
+- **原模板 6 行大表格 100% 保全**：完全基于河大官方报告模板的大框架填充，保持学院教师批改视觉习惯。
+- **多余空白页（第 2 页空白）自动消灭**：分析并解决了封面分页符与空行溢出导致第 2 页出现空白页的问题。
+- **翻拍照片去水印与尺寸控制**：自带图片预处理工具，自动裁切手机相机水印（realme/iPhone 等）与非屏幕边框，自动自适应排版。
+- **全课程实验大纲覆盖**：沉淀了实验一至实验七（进程控制、同步互斥、调度、银行家算法、内存管理、页面置换、磁盘调度）的核心题库与要点。
+
+---
+
+## 目录结构
 
 ```text
 .
-├── SKILL.md                          # Antigravity 技能主定义（YAML Frontmatter + SOP）
+├── SKILL.md                          # AI Agent 技能主定义（标准 YAML Frontmatter + SOP 流程）
 ├── README.md                         # 项目使用说明书
 ├── LICENSE                           # MIT 开源协议
 ├── scripts/                          # 自动化工具箱
@@ -41,9 +44,9 @@
 
 ---
 
-## 🚀 安装与使用方式
+## 安装与使用方式
 
-### 方式一：作为 Google Antigravity Skill 全局使用（推荐）
+### 方式一：在 Google Antigravity (AGY) 中使用
 
 将本项目克隆至 Antigravity 全局技能目录：
 
@@ -51,12 +54,20 @@
 git clone https://github.com/eryuemu/hbu-os-lab-skill.git ~/.gemini/config/skills/hebei-university-os-lab-skill
 ```
 
-在对话中直接对 Antigravity Agent 发送需求即可自动触发：
+在对话中直接发送需求即可自动触发：
 > “根据操作系统实验指导书和这几张截图，帮我写一下实验二的实验报告”
 
 ---
 
-### 方式二：命令行独立使用脚本
+### 方式二：在其他 AI Agent (Cursor / Claude Code / Windsurf 等) 中使用
+
+将本项目克隆到项目的规则或技能目录中（例如 `.cursorrules`, `.agents/skills`, 或作为上下文知识库引用）：
+直接将 `SKILL.md` 与 `references/` 作为上下文规则提供给 AI Agent，提示词示例：
+> “请严格遵循 SKILL.md 中的排版规范和避坑指南，帮我完成操作系统实验报告。”
+
+---
+
+### 方式三：命令行独立使用脚本
 
 1. **预处理翻拍照片（去相机水印与边框）**：
 ```bash
@@ -75,13 +86,13 @@ with zipfile.ZipFile('你的实验报告.docx') as z:
 
 ---
 
-## ⚠️ 隐私声明与合规提醒
+## 隐私声明与合规提醒
 
 1. 本仓库所有示例数据均已完成脱敏处理（姓名、学号等均使用虚拟占位符）。
 2. 本工具仅用于辅助个人学习、格式排版与实验记录整理，请严格遵守所在高校学术诚信规范，切勿直接抄袭。
 
 ---
 
-## 📄 License
+## License
 
 本项目基于 [MIT License](LICENSE) 开源。
