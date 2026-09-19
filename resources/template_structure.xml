@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- 
+  河北大学电子信息工程学院《学生实验报告册》正文大表格 XML 骨架参考
+  外层包含且仅包含 6 个 w:tr (行)
+-->
+<w:tbl xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">
+  <w:tblPr>
+    <w:tblW w:w="8880" w:type="dxa"/>
+    <w:jc w:val="center"/>
+    <w:tblBorders>
+      <w:top w:val="single" w:sz="6" w:space="0" w:color="000000"/>
+      <w:left w:val="single" w:sz="6" w:space="0" w:color="000000"/>
+      <w:bottom w:val="single" w:sz="6" w:space="0" w:color="000000"/>
+      <w:right w:val="single" w:sz="6" w:space="0" w:color="000000"/>
+      <w:insideH w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+      <w:insideV w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+    </w:tblBorders>
+  </w:tblPr>
+  <w:tblGrid>
+    <w:gridCol w:w="1920"/>
+    <w:gridCol w:w="6960"/>
+  </w:tblGrid>
+  
+  <!-- 行 0: 实验名称 -->
+  <w:tr>
+    <w:tc><w:tcPr><w:tcW w:w="1920" w:type="dxa"/><w:vAlign w:val="center"/></w:tcPr>
+      <w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="24"/></w:rPr><w:t>实验名称</w:t></w:r></w:p>
+    </w:tc>
+    <w:tc><w:tcPr><w:tcW w:w="6960" w:type="dxa"/><w:vAlign w:val="center"/></w:tcPr>
+      <w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="24"/></w:rPr><w:t>{{EXPERIMENT_TITLE}}</w:t></w:r></w:p>
+    </w:tc>
+  </w:tr>
+
+  <!-- 行 1: 实验目的 -->
+  <w:tr>
+    <w:tc><w:tcPr><w:tcW w:w="1920" w:type="dxa"/><w:vAlign w:val="center"/></w:tcPr>
+      <w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="21"/></w:rPr><w:t>实验目的</w:t></w:r></w:p>
+    </w:tc>
+    <w:tc><w:tcPr><w:tcW w:w="6960" w:type="dxa"/><w:vAlign w:val="center"/></w:tcPr>
+      <!-- {{EXPERIMENT_OBJECTIVES}} -->
+    </w:tc>
+  </w:tr>
+
+  <!-- 行 2: 实验环境 -->
+  <w:tr>
+    <w:tc><w:tcPr><w:tcW w:w="1920" w:type="dxa"/><w:vAlign w:val="center"/></w:tcPr>
+      <w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="21"/></w:rPr><w:t>实验环境</w:t></w:r></w:p>
+    </w:tc>
+    <w:tc><w:tcPr><w:tcW w:w="6960" w:type="dxa"/><w:vAlign w:val="center"/></w:tcPr>
+      <!-- {{EXPERIMENT_ENVIRONMENT}} -->
+    </w:tc>
+  </w:tr>
+
+  <!-- 行 3: 课程目标 -->
+  <w:tr>
+    <w:tc><w:tcPr><w:tcW w:w="1920" w:type="dxa"/><w:vAlign w:val="center"/></w:tcPr>
+      <w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="21"/></w:rPr><w:t>课程目标</w:t></w:r></w:p>
+    </w:tc>
+    <w:tc><w:tcPr><w:tcW w:w="6960" w:type="dxa"/><w:vAlign w:val="center"/></w:tcPr>
+      <!-- {{COURSE_GOALS}} -->
+    </w:tc>
+  </w:tr>
+
+  <!-- 行 4: 实验内容、步骤和实验记录 (核心正文区) -->
+  <w:tr>
+    <w:tc><w:tcPr><w:tcW w:w="1920" w:type="dxa"/><w:vAlign w:val="center"/></w:tcPr>
+      <w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="21"/></w:rPr><w:t>实验内容、步骤和实验记录</w:t></w:r></w:p>
+    </w:tc>
+    <w:tc><w:tcPr><w:tcW w:w="6960" w:type="dxa"/><w:vAlign w:val="top"/></w:tcPr>
+      <!-- {{DETAILED_CONTENT_AND_SUB_TABLES_AND_IMAGES}} -->
+    </w:tc>
+  </w:tr>
+
+  <!-- 行 5: 实验总结与反思 -->
+  <w:tr>
+    <w:tc><w:tcPr><w:tcW w:w="1920" w:type="dxa"/><w:vAlign w:val="center"/></w:tcPr>
+      <w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="21"/></w:rPr><w:t>实验总结与反思</w:t></w:r></w:p>
+    </w:tc>
+    <w:tc><w:tcPr><w:tcW w:w="6960" w:type="dxa"/><w:vAlign w:val="center"/></w:tcPr>
+      <!-- {{SUMMARY_AND_REFLECTION}} -->
+    </w:tc>
+  </w:tr>
+</w:tbl>
